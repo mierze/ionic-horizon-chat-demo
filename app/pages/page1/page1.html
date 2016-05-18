@@ -6,10 +6,12 @@
   <h2>Chat</h2>
   <div>
     <form (submit)="post()">
-      <ion-item>
-        <ion-input [(ngModel)]="chatText" palceholder="Chat" type="text"></ion-input>
-        <button clear item-right type="submit">Post</button>
-      </ion-item>
+      <ion-list>
+        <ion-item>
+          <ion-input [(ngModel)]="chatText" palceholder="Chat" type="text"></ion-input>
+          <button clear item-right type="submit">Post</button>
+        </ion-item>
+      </ion-list>
     </form>
   </div>
   <ion-list>
