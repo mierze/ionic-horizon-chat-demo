@@ -1,0 +1,17 @@
+<ion-navbar *navbar>
+  <ion-title>Friends</ion-title>
+</ion-navbar>
+
+<ion-content class="page1">
+  <ion-list>
+    <ion-item *ngFor="#friend of friends">
+      <ion-avatar item-left>
+        <img src="{{friend.avatar}}">
+      </ion-avatar>
+      <h2>{{friend.name}}</h2>
+    </ion-item>
+    <div *ngIf="!friends">
+      <i>You have no friends</i>
+    </div>
+  </ion-list>
+</ion-content>

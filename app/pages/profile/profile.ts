@@ -5,9 +5,9 @@ import {NgZone} from 'angular2/core';
 declare var horizon;
 
 @Page({
-  templateUrl: 'build/pages/page1/page1.html',
+  templateUrl: 'build/pages/profile/profile.html',
 })
-export class Page1 {
+export class ProfilePage {
   chatText: string
   chats: any[]
 

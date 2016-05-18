@@ -5,8 +5,8 @@
 # 'bind' controls which local interfaces will be listened on
 # 'port' controls which port will be listened on
 #------------------------------------------------------------------------------
-# bind = [ "localhost" ]
-# port = 8181
+bind = [ "10.0.1.102" ]
+port = 8181
 
 
 ###############################################################################
@@ -14,9 +14,9 @@
 # 'secure' will disable HTTPS and use HTTP instead when set to 'false'
 # 'key_file' and 'cert_file' are required for serving HTTPS
 #------------------------------------------------------------------------------
-# secure = false
-# key_file = "horizon-key.pem"
-# cert_file = "horizon-cert.pem"
+secure = true
+key_file = "horizon-key.pem"
+cert_file = "horizon-cert.pem"
 
 
 ###############################################################################
@@ -49,7 +49,7 @@ project_name = "chat"
 # 'start_rethinkdb' will run an internal RethinkDB instance
 #------------------------------------------------------------------------------
 # connect = "localhost:28015"
-# start_rethinkdb = false
+start_rethinkdb = true
 
 
 ###############################################################################
@@ -69,8 +69,8 @@ project_name = "chat"
 # 'auth_redirect' specifies where users will be redirected to after login
 #------------------------------------------------------------------------------
 token_secret = "K7BBubCcLo//0jI344cTeJBqbGjow2rhsttTfu0QpGJdMdyP9EcQeua5cO8IjKViBincWwu2SVkJg1dUhh328w=="
-# allow_anonymous = true
-# allow_unauthenticated = true
+allow_anonymous = true
+allow_unauthenticated = true
 # auth_redirect = "/"
 #
 # [auth.facebook]
@@ -81,9 +81,9 @@ token_secret = "K7BBubCcLo//0jI344cTeJBqbGjow2rhsttTfu0QpGJdMdyP9EcQeua5cO8IjKVi
 # id = "00000000000-00000000000000000000000000000000.apps.googleusercontent.com"
 # secret = "000000000000000000000000"
 #
-# [auth.twitter]
-# id = "0000000000000000000000000"
-# secret = "00000000000000000000000000000000000000000000000000"
+[auth.twitter]
+id = "fnkw8GzDvmj0FgsFrUdq1CixR"
+secret = "XyDsrxOHk91jVldTMSSSkaYkIZATqStPeZ7QcrxIxTGzIRYutn"
 #
 # [auth.github]
 # id = "00000000000000000000"
